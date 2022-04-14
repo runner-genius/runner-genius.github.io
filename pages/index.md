@@ -15,7 +15,7 @@ permalink: /
 
 # Genius Runner
 
-* [中文版](/pRoJEct-VeXEd/index-cn/)
+* [中文版](index-cn)
 
 <br>
 > 🏃‍♀️🏃 love running, love life, love to share 🏃‍♀️🏃
@@ -40,8 +40,8 @@ permalink: /
 
 ## Where
 
-* [Android](www.google.com)
-* [IOS](www.google.com)
+* [Android](www.google.com) come soon
+* [IOS](www.google.com) come soon
 
 ## How
 ### 应用数据
@@ -70,25 +70,27 @@ permalink: /
 
 ```mermaid
 pie
-    title Pie Chart
-    "Dogs" : 36
-    "Cats" : 85
-    "Rats" : 150
-    "Pheonix" : 120
-    "Elephant" : 330
+    title 分布
+    "团队" : 15
+    "国库" : 30
+    "跑赚" : 30
+    "ISPO" : 15
+    "其他" : 10
 ```
+
+* GRST 游戏代币
+* GRMT 治理代币
 
 #### ISPO
 
-> [Wallet tutorial](/pRoJEct-VeXEd/wallet/)
+> [Wallet tutorial](wallet)
 
 参加`ISPO`可以赢取空投
 
 | 池代码  | 类型|  状态 |
 | :----------- | :-------- | :-------- |
-| xxx | `100% GENS` | Active-Saturated |
-| yyy | `50% GENS / 50% ADA` | Inactive |
-
+| xxx | `100% GRSS` | Active-Saturated |
+| yyy | `50% GRSS / 50% ADA` | Inactive |
 
 ## Who
 
