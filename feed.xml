@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://runner-genius.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://runner-genius.github.io/" rel="alternate" type="text/html" /><updated>2022-04-14T23:47:52+08:00</updated><id>https://runner-genius.github.io/feed.xml</id><title type="html">genius runner</title><subtitle>genius runner</subtitle><entry><title type="html">Cardano钱包</title><link href="https://runner-genius.github.io/wallet-cn/" rel="alternate" type="text/html" title="Cardano钱包" /><published>2022-04-10T00:00:00+08:00</published><updated>2022-04-10T00:00:00+08:00</updated><id>https://runner-genius.github.io/wallet-cn</id><content type="html" xml:base="https://runner-genius.github.io/wallet-cn/"><![CDATA[<h2 id="下载">下载</h2>
+
+<ul>
+  <li>[IOS Yoroi] 市场搜索</li>
+  <li>[Android Yoroi] 市场搜索</li>
+  <li>[浏览器扩展]
+    <ul>
+      <li>[Yoroi][https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb]</li>
+      <li><a href="https://chrome.google.com/webstore/detail/nami/lpfcbjknijpeeillifnkikgncikgfhdo">Nami</a></li>
+      <li><a href="https://chrome.google.com/webstore/detail/eternlcc/kmhcihpebfmpgmihbkipmjlmmioameka">Eternl/cc</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="示例">示例</h2>
+
+<p>接下来将会以<code class="language-plaintext highlighter-rouge">Eternl/cc</code>为例子，进行演示，你需要先按照上述方式安装浏览器扩展。</p>
+
+<h3 id="创建钱包">创建钱包</h3>
+
+<p><img src="https://runner-genius.github.io/src/assets/img/cardano/img-sample.jpg" alt="img-smpl" /></p>
+
+<h3 id="保存助记词">保存助记词</h3>
+
+<h3 id="充值">充值</h3>
+
+<h3 id="委托">委托</h3>
+
+<blockquote>
+  <p>委托时，用户的<code class="language-plaintext highlighter-rouge">ada</code>安全的保存在区块链上，因此无需担心<code class="language-plaintext highlighter-rouge">ada</code>会被盗，并且委托时，<code class="language-plaintext highlighter-rouge">ada</code>也不会被锁定，随时可以取走，没有等待期.</p>
+</blockquote>
+
+<ul>
+  <li>选择想要委托的池子</li>
+  <li>输入密码，进行委托</li>
+</ul>
+
+<h3 id="收益">收益</h3>]]></content><author><name>Genius</name></author><category term="Cardano基础" /><summary type="html"><![CDATA[下载]]></summary></entry><entry><title type="html">Cardano Wallet</title><link href="https://runner-genius.github.io/wallet/" rel="alternate" type="text/html" title="Cardano Wallet" /><published>2022-04-10T00:00:00+08:00</published><updated>2022-04-10T00:00:00+08:00</updated><id>https://runner-genius.github.io/wallet</id><content type="html" xml:base="https://runner-genius.github.io/wallet/"><![CDATA[<h2 id="download">download</h2>
+
+<ul>
+  <li>[IOS Yoroi]</li>
+  <li>[Android Yoroi]</li>
+  <li>[browser extension]
+    <ul>
+      <li>[Yoroi][https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb]</li>
+      <li><a href="https://chrome.google.com/webstore/detail/nami/lpfcbjknijpeeillifnkikgncikgfhdo">Nami</a></li>
+      <li><a href="https://chrome.google.com/webstore/detail/eternlcc/kmhcihpebfmpgmihbkipmjlmmioameka">Eternl/cc</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="demo">demo</h2>
+
+<p>next, we will use <code class="language-plaintext highlighter-rouge">Eternl/cc</code> as an example to demonstrate, you need to install the browser extension as above.</p>
+
+<h3 id="create-wallet">create wallet</h3>
+
+<p><img src="https://runner-genius.github.io/src/assets/img/cardano/img-sample.jpg" alt="img-smpl" /></p>
+
+<h3 id="save-phrase">save phrase</h3>
+
+<p><strong>save to a safe location, do not use screenshots, once lost, you will lose everything, keep it safe</strong></p>
+
+<h3 id="send-ada">send <code class="language-plaintext highlighter-rouge">ada</code></h3>
+
+<p>goto any <code class="language-plaintext highlighter-rouge">Exchange</code> or <code class="language-plaintext highlighter-rouge">Dex</code>, buy <code class="language-plaintext highlighter-rouge">ada</code> then send it to the new wallet.</p>
+
+<h3 id="staking">staking</h3>
+
+<blockquote>
+  <p>when staking, the user’s <code class="language-plaintext highlighter-rouge">ada</code> is safely stored on the blockchain, so there is no need to worry about <code class="language-plaintext highlighter-rouge">ada</code> being stolen, and when staking, <code class="language-plaintext highlighter-rouge">ada</code> will not be locked and can be taken away at any time without waiting period.</p>
+</blockquote>
+
+<ul>
+  <li>Select the pool you want to delegate</li>
+  <li>Enter the password to entrust</li>
+</ul>
+
+<h3 id="reward">reward</h3>
+
+<p>TODO</p>]]></content><author><name>Genius</name></author><category term="Cardano" /><summary type="html"><![CDATA[download]]></summary></entry></feed>

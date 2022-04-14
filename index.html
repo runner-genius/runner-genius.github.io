@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- multi-device width -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!-- site description -->
+    
+    <meta content="genius runner" name="description"/>
+    <!-- referer for 3rd-part images-->
+    <meta content="no-referrer" name="referrer"/>
+    <!-- title -->
+    <title>
+        
+            Genius Runner
+        
+    </title>
+    <!-- icon -->
+    <link href="https://runner-genius.github.io/src/assets/img/favicon.ico" rel="shortcut icon bookmark" type="image/x-icon"/>
+    <!-- global stylesheet -->
+    <link rel="stylesheet" href="https://runner-genius.github.io/src/assets/css/main.css" type="text/css"/>
+    <!-- fa 5.9.0 -->
+    <link rel="stylesheet" href="https://runner-genius.github.io/src/assets/css/fa.min.css" type="text/css"/>
+    <!-- global script -->
+    <script src="https://runner-genius.github.io/src/assets/js/main.js" async></script>
+    <!-- mathjax 2.7.5 -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- mermaid 8.11.5-->
+    <script async src="https://runner-genius.github.io/src/assets/js/mermaid.min.js"></script>
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Genius Runner | genius runner</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Genius Runner" />
+<meta name="author" content="Genius" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="genius runner" />
+<meta property="og:description" content="genius runner" />
+<link rel="canonical" href="https://runner-genius.github.io/" />
+<meta property="og:url" content="https://runner-genius.github.io/" />
+<meta property="og:site_name" content="genius runner" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Genius Runner" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Genius" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Genius"},"description":"genius runner","headline":"Genius Runner","name":"genius runner","url":"https://runner-genius.github.io/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+  <body class="page">
+    <!-- background animations -->
+<div class="div_bg">
+    <canvas id="c"></canvas>
+</div>
+<script>
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+c.height = window.innerHeight;
+c.width = window.innerWidth;
+var txts = "λαβγδεζηθικμνξοπρστυφχψωABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~";
+txts = txts.split("");
+var font_size = 12;
+var columns = c.width / font_size;
+var drops = [];
+for (var x = 0; x < columns; x++) drops[x] = 1;
+
+function draw() {
+  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.fillStyle = "#490";
+  ctx.font = font_size + "px arial";
+  for (var i = 0; i < drops.length; i++) {
+    var text = txts[Math.floor(Math.random() * txts.length)];
+    ctx.fillText(text, i * font_size, drops[i] * font_size);
+    if (drops[i] * font_size > c.height || Math.random() > 0.98) drops[i] = 0;
+    drops[i]++;
+  }
+}
+setInterval(draw, 20);
+</script>
+    <!-- collection list, shown by click "archive" buttom in header -->
+<div class="collection_list_container"  id="the_collection_list">
+<div class="collection_list_background"  onclick="close_collection_list()"></div>
+<div class="collection_list" onload="none">
+    <div class="collection_list_header">
+        <!-- TODO: search post -->
+                                            <!-- <a class="search_btn">
+      <i class="fa fa-search"> Search</i>
+    </a>
+    &nbsp; -->
+        <table class="collection_list_header_title">
+            <tr>
+                <td>Archive:</td>
+                <td id="clh_title"></td>
+            </tr>
+        </table>
+        <div class="close_btn" onclick="close_collection_list()">
+            <a class="close_btn_icon">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </div>
+    <div class="collection_name_list">
+        <table class="vertical_center_table">
+            <tr>
+                <td>
+                    <ul>
+                        <!-- show all collections -->
+                        <li>
+                            <a class="a_collection_label" onclick="show_collection('all')">All
+                            </a>
+                        </li>
+                        <!-- show a simple collection -->
+                        
+                            
+                                
+                                    
+                                        <li>
+                                            <a class="a_collection_label" onclick="show_collection('posts')">
+                                                
+                                                    posts
+                                                
+                                            </a>
+                                        </li>
+                                    
+                                
+                            
+                        
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="posts_by_cate">
+        <!-- post list in all collections -->
+        <div class="post_list_in_1_collection" id="all">
+            <table class="vertical_center_table">
+                <tr>
+                    <td>
+                        <ul>
+                            
+                                
+                                    
+                                        
+                                            <p class="h_collection_label">
+                                                
+                                                    posts
+                                                
+                                            </p>
+                                            
+                                                
+                                                    <li>
+                                                        <a class="a_title" href="https://runner-genius.github.io/wallet-cn/">Cardano钱包</a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li>
+                                                        <a class="a_title" href="https://runner-genius.github.io/wallet/">Cardano Wallet</a>
+                                                    </li>
+                                                
+                                            
+                                            <br/>
+                                        
+                                    
+                                
+                            
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- post list in a collection -->
+        
+            <div class="post_list_in_1_collection" id="posts">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="https://runner-genius.github.io/wallet-cn/">Cardano钱包</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="https://runner-genius.github.io/wallet/">Cardano Wallet</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+    </div>
+</div>
+</div>
+    <div class="container" id="ctner">
+       <div class="header">
+  <table class="vertical_center_table">
+    <tr>
+      <td>
+        <nav class="nav_bar">
+          <ul>
+            <!-- left header -->
+            <li class="li_left">
+              <!-- open collection tree -->
+              
+              <a class="header_btn" onclick="open_collection_list()">
+                <i class="fa btn_icon fa-bars">
+                  
+                  <p class="btn_text">Archives</p>
+                  
+                </i>
+              </a>
+              
+              <!-- home -->
+              
+              <!-- maximize -->
+              
+              <!-- access token -->
+              
+            </li>
+            <!-- right header -->
+            <span class="span_right">
+              
+              <!-- scroll up -->
+              <a class="header_btn" onclick="scroll_percentage(-0.88)">
+                <i class="fa btn_icon fa-backward">
+                  
+                  <p class="btn_text">Prev</p>
+                  
+                </i>
+              </a>
+              <!-- scroll down -->
+              <a class="header_btn" onclick="scroll_percentage(0.88)">
+                <i class="fa btn_icon fa-forward">
+                  
+                  <p class="btn_text">Next</p>
+                  
+                </i>
+              </a>
+              <!-- popup table of content -->
+              <a class="header_btn popup_btn" onclick="toggle_toc()">
+                <i class="fa btn_icon fa-list">
+                  
+                  <p class="btn_text">Content</p>
+                  
+                </i>
+              </a>
+              
+            </span>
+          </ul>
+        </nav>
+        <!-- <hr /> -->
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- table of content -->
+
+<div class="div_toc toc" id="popup_toc">
+  
+  <!-- generate toc -->
+  <ul id="ul_toc" class="ul_toc">
+  <li><a href="#what">What</a></li>
+  <li><a href="#why">Why</a></li>
+  <li><a href="#where">Where</a></li>
+  <li><a href="#how">How</a>
+    <ul>
+      <li><a href="#应用数据">应用数据</a></li>
+      <li><a href="#路线图">路线图</a></li>
+      <li><a href="#代币经济学">代币经济学</a></li>
+    </ul>
+  </li>
+  <li><a href="#who">Who</a>
+    <ul>
+      <li><a href="#团队">团队</a></li>
+      <li><a href="#顾问">顾问</a></li>
+      <li><a href="#支持者">支持者</a></li>
+      <li><a href="#合作伙伴">合作伙伴</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<!-- toggle maximize -->
+
+<!-- encrypt and decrypt -->
+
+
+     
+      <div class="div_article" id="div_atcl">
+        <article
+          id="main_atcl"
+          itemscope
+          itemtype="http://schema.org/BlogPosting"
+        >
+          <h1 id="genius-runner">Genius Runner</h1>
+
+<ul>
+  <li><a href="index-cn">中文版</a></li>
+</ul>
+
+<p><br /></p>
+<blockquote>
+  <p>🏃‍♀️🏃 love running, love life, love to share 🏃‍♀️🏃</p>
+</blockquote>
+
+<!-- <div class="running" style="height:2px;width:2px">
+    <div class="outer">
+        <div class="body">
+            <div class="arm behind"></div>
+            <div class="arm front"></div>
+            <div class="leg behind"></div>
+            <div class="leg front"></div>
+        </div>
+    </div>
+</div> -->
+
+<h2 id="what">What</h2>
+
+<p><code class="language-plaintext highlighter-rouge">Genius Runner</code>是一款<code class="language-plaintext highlighter-rouge">WEB 3</code>生活方式的应用程序,带有社交和游戏元素,玩家可以通过户外散步、慢跑或跑步方式赚取可观的收入.</p>
+
+<h2 id="why">Why</h2>
+
+<h2 id="where">Where</h2>
+
+<ul>
+  <li><a href="www.google.com">Android</a> come soon</li>
+  <li><a href="www.google.com">IOS</a> come soon</li>
+</ul>
+
+<h2 id="how">How</h2>
+<h3 id="应用数据">应用数据</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">指标</th>
+      <th style="text-align: left">值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">跑动距离 (M)</td>
+      <td style="text-align: left">4,233,434,322.23</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">碳抵消 (KG)</td>
+      <td style="text-align: left">540,000.232</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">燃烧的卡路里 (KCAL)</td>
+      <td style="text-align: left">764,343,232.12</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Discord成员</td>
+      <td style="text-align: left">155,43</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Telegram成员</td>
+      <td style="text-align: left">134,23</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Twitter粉丝</td>
+      <td style="text-align: left">233,323</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="路线图">路线图</h3>
+
+<h4 id="第一阶段">第一阶段</h4>
+
+<h4 id="第二阶段">第二阶段</h4>
+
+<h4 id="第三阶段">第三阶段</h4>
+
+<h4 id="第四阶段">第四阶段</h4>
+
+<h3 id="代币经济学">代币经济学</h3>
+
+<pre><code class="language-mermaid">pie
+    title 分布
+    "团队" : 15
+    "国库" : 30
+    "跑赚" : 30
+    "ISPO" : 15
+    "其他" : 10
+</code></pre>
+
+<ul>
+  <li>GRST 游戏代币</li>
+  <li>GRMT 治理代币</li>
+</ul>
+
+<h4 id="ispo">ISPO</h4>
+
+<blockquote>
+  <p><a href="wallet">Wallet tutorial</a></p>
+</blockquote>
+
+<p>参加<code class="language-plaintext highlighter-rouge">ISPO</code>可以赢取空投</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">池代码</th>
+      <th style="text-align: left">类型</th>
+      <th style="text-align: left">状态</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">xxx</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">100% GRSS</code></td>
+      <td style="text-align: left">Active-Saturated</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">yyy</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">50% GRSS / 50% ADA</code></td>
+      <td style="text-align: left">Inactive</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="who">Who</h2>
+
+<h3 id="团队">团队</h3>
+
+<h3 id="顾问">顾问</h3>
+
+<h3 id="支持者">支持者</h3>
+
+<h3 id="合作伙伴">合作伙伴</h3>
+
+ <div class="post_list">
+
+</div> 
+
+        </article>
+        
+         <div class="footer">
+  <nav class="nav_bar">
+    <ul class="footer_owner_info">
+      <!-- email -->
+      
+      <!-- linkedin -->
+      
+      <!-- github -->
+      
+      <a class="footer_btn" href="https://github.com/runner-genius">
+        <i class="fa fa-github">
+          
+          <p>Github</p>
+          
+        </i>
+      </a>
+      
+      <!-- gitlab -->
+      
+      <!-- website -->
+      
+      <!-- twitter -->
+      
+      <a class="footer_btn" href="https://twitter.com/runner-genius">
+        <i class="fa fa-twitter">
+          
+          <p>Twitter</p>
+          
+        </i>
+      </a>
+      
+      <!-- facebook -->
+      
+      <!-- instagram -->
+      
+      <!-- youtube -->
+      
+      <!-- steam -->
+      
+      <!-- weibo -->
+      
+    </ul>
+    <!-- copyright -->
+    <ul class="footer_copyright">
+      <li class="copyright">© 2015 - 2020</li>
+      
+      <li>Designed by DeerRIDER, All Rights Reserved</li>
+      
+    </ul>
+  </nav>
+</div>
+ 
+      </div>
+    </div>
+  </body>
+  <script async src="https://runner-genius.github.io/src/assets/js/init-mermaid.js"></script>
+  <!-- <link rel="stylesheet" href="https://runner-genius.github.io/src/assets/css/run.css"> -->
+</html>
